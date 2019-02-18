@@ -1,0 +1,20 @@
+{
+  "name": "Bamazon",
+  "version": "1.0.0",
+  "description": "Bamazon-CLI is a node command line application that interacts with the MySQL Database. It allows the users to view and purchase items from the inventory. Managers can edit and manage the products in the database. Supervisors are able to add new departments and view sales data for each department.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siaustin/Bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siaustin/Bamazon/issues"
+  },
+  "homepage": "https://github.com/siaustin/Bamazon#readme"
+}
