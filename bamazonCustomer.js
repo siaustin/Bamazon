@@ -12,7 +12,7 @@ var Customer = function() {
       "QTY",
       "PRODUCT SALES"
     ],
-    colWidths: [12, 50, 8]
+    colWidths: [5, 40, 20, 10, 10, 15]
   });
 
   var validInput = value => {
@@ -44,21 +44,22 @@ var Customer = function() {
       if (err) throw err;
       res.forEach(element => {
         var row = [];
+
+        console.log(element);
+
         row.push(
           element.item_id,
           element.product_name,
           element.department_name,
           element.price,
           element.stock_quantity,
-          element.product_sales
+          element.product_sales ? element.product_sales : 0
         );
+
         table.push(row);
       });
 
-      setTimeout(() => {
-        console.log(table.toString());
-      }, 2000);
-      // console.log(table.toString());
+      console.log(table.toString());
       placeOrder();
     });
   }

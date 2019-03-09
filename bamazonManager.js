@@ -95,7 +95,7 @@ var Manager = function() {
           element.department_name,
           element.price,
           element.stock_quantity,
-          element.product_sales
+          element.product_sales ? element.product_sales : 0
         );
         table.push(row);
       });
@@ -129,7 +129,7 @@ var Manager = function() {
             element.department_name,
             element.price,
             element.stock_quantity,
-            element.product_sales
+            element.product_sales ? element.product_sales : 0
           );
           table.push(row);
         });
